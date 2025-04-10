@@ -1,13 +1,12 @@
-/* GENERAL RESET */
 body {
     font-family: Arial, sans-serif;
     padding-top: 80px;
     background-color: #f9f9f9;
     margin: 0;
-  }
-  
-  /* HEADER STYLES */
-  header {
+}
+
+/* HEADER STYLES */
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,10 +15,10 @@ body {
     color: white;
     z-index: 1000;
     font-family: 'DynaPuff', serif;
-  }
-  
-  /* HEADER  */
-  .nav-wrap {
+}
+
+/* HEADER  */
+.nav-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,36 +26,41 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-  }
-  
-  /* TITLE */
-  .nav-wrap h1 {
+}
+
+/* TITLE */
+.nav-wrap a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-wrap h1 {
     font-size: 2rem;
     margin: 0;
     padding: 0;
     line-height: 1;
     color: white;
-  }
-  
-  /* NAV */
-  nav.navbar {
+}
+
+/* NAV */
+nav.navbar {
     margin: 0;
     padding: 0;
-  }
-  
-  nav.navbar ul {
+}
+
+nav.navbar ul {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 20px;
     margin: 0;
     padding: 0;
-  }
-  
-  /* NAV LINKS */
-  nav.navbar ul li a,
-  nav.navbar ul li a:visited,
-  nav.navbar ul li a:active {
+}
+
+/* NAV LINKS */
+nav.navbar ul li a,
+nav.navbar ul li a:visited,
+nav.navbar ul li a:active {
     text-decoration: none;
     color: white;
     font-family: 'DynaPuff', serif;
@@ -66,16 +70,48 @@ body {
     line-height: 1;
     vertical-align: middle;
     transition: all 0.2s ease;
-  }
-  
-  /* HOVER EFFECT */
-  nav.navbar ul li a:hover {
+}
+
+/* HOVER EFFECT */
+nav.navbar ul li a:hover {
     transform: translateY(-3px);
     background-color: peachpuff;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-  }
-  
+}
+
+@media (max-width: 768px) {
+
+
+    .nav-wrap {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        height: auto;
+    }
+
+    .nav-wrap h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    nav.navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav.navbar ul li a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .hamburger,
+    .nav-toggle {
+        display: none !important;
+    }
+}
+
 
 /*home page*/
 
@@ -94,7 +130,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    font-size: 500%;
+    font-size: 5em;
     text-shadow: 1px 1px 2px darkblue;
     text-align: center;
     border-radius: 10px;
@@ -102,8 +138,6 @@ body {
     width: 80%;
     color: white;
 }
-
-
 
 .paragraph {
     position: relative;
@@ -142,6 +176,7 @@ body {
     font-size: 3rem;
     font-family: 'DynaPuff', serif;
 }
+
 #button-services span {
     display: inline-block;
     transition: transform 0.3s ease;
@@ -176,7 +211,17 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+
     /* subtle, professional shadow */
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.service-item a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .service-item img {
@@ -204,20 +249,33 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     transition: box-shadow 0.3s ease;
 }
+
 .puppyBottomPic {
     width: 100%;
     height: 500px;
     object-position: 50% 20%;
     object-fit: cover;
     display: block;
-  }
+}
 
 /* Mobile-friendly adjustments */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+
+    .overlay-text {
+        top: 50%;
+        /* move it lower so it doesn’t clash with nav */
+        font-size: 4rem;
+        /* scale it down on mobile */
+        padding: 10px;
+        width: 90%;
+        /* make sure it doesn’t overflow */
+    }
+
     .services-container {
         flex-direction: column;
         /* stack items vertically on mobile */
     }
+
 }
 
 .testimonial-container {
@@ -225,7 +283,6 @@ body {
     width: 100%;
 
 }
-
 
 .pawpic2 {
     width: 100%;
@@ -251,7 +308,7 @@ body {
     font-size: 150%;
 }
 
-                        /* Gallery page */
+/* Gallery page */
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -309,7 +366,7 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 15px;
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
 }
 
@@ -323,7 +380,7 @@ footer {
 }
 
 /* Mobile view (single column) */
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr;
         /* stacks images vertically */
@@ -344,12 +401,12 @@ footer {
     }
 
     body {
-        padding-top: 140px;
+        padding-top: 200px;
         /* adjusts for header spacing */
     }
 }
 
-                    /* CONTACT PAGE*/
+/* CONTACT PAGE*/
 .maps {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -432,11 +489,12 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-                                /*  SERIVCES  */
+/*  SERIVCES  */
 .service-wrapper {
     padding: 40px 20px;
-    
+
 }
+
 .services-table {
     background-color: white;
     border-radius: 15px;
@@ -444,6 +502,7 @@ footer {
     margin: 0 auto;
     box-sizing: border-box;
 }
+
 .services-table h2 {
     text-align: center;
     color: orange;
@@ -452,6 +511,7 @@ footer {
     margin-bottom: 30px;
 
 }
+
 .services-table thead {
     font-family: 'Dynapuff', serif;
     font-size: 2rem;
@@ -461,11 +521,13 @@ footer {
 .services-table table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: pink;
 
 }
-.services-table th, .services-table td {
+
+.services-table th,
+.services-table td {
     padding: 40px;
     text-align: left;
     border-bottom: 3px solid #ddd;
@@ -483,7 +545,7 @@ footer {
     background-color: #fef2f2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     body {
         font-size: 90%;
     }
@@ -571,10 +633,9 @@ footer {
     padding: 0 20px;
 }
 
-.booking-section h2{
+.booking-section h2 {
     color: orange;
     font-family: 'Dynapuff', serif;
     font-size: 2rem;
 
 }
-
