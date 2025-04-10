@@ -197,26 +197,18 @@ nav.navbar ul li a:hover {
 .services-container {
     display: flex;
     justify-content: space-between;
-    /* evenly spaces service items */
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
-    /* ensures equal spacing */
+
 }
 
 .service-item {
     flex: 1;
-    /* each item takes equal space */
     padding: 50px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-
-    /* subtle, professional shadow */
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
 }
 
 .service-item a {
