@@ -220,7 +220,7 @@ nav.navbar ul li a:hover {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    /* images stay consistent size */
+
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -250,22 +250,20 @@ nav.navbar ul li a:hover {
     display: block;
 }
 
-/* Mobile-friendly adjustments */
+
 @media (max-width: 768px) {
 
     .overlay-text {
         top: 50%;
-        /* move it lower so it doesn’t clash with nav */
         font-size: 4rem;
-        /* scale it down on mobile */
         padding: 10px;
         width: 90%;
-        /* make sure it doesn’t overflow */
+
     }
 
     .services-container {
         flex-direction: column;
-        /* stack items vertically on mobile */
+
     }
 
 }
@@ -307,14 +305,12 @@ nav.navbar ul li a:hover {
     gap: 15px;
     max-width: 1200px;
     margin: 80px auto;
-    /* spacing to avoid header overlap */
 }
 
 .gallery img,
 .gallery .image-hover {
     width: 100%;
     height: 300px;
-    /* or auto, depending on your desired ratio */
     object-fit: cover;
     border-radius: 10px;
     position: relative;
@@ -336,7 +332,6 @@ nav.navbar ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* this is the magic line */
     position: absolute;
     top: 0;
     left: 0;
@@ -362,7 +357,7 @@ footer {
     margin-top: 30px;
 }
 
-#galleryh1 {
+#galleryh2 {
     padding: 15px;
     text-align: center;
     padding-top: 30px;
@@ -371,30 +366,24 @@ footer {
 
 }
 
-/* Mobile view (single column) */
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr;
-        /* stacks images vertically */
         gap: 10px;
-        /* smaller gaps for tighter space */
     }
 
     .gallery .image-hover {
         height: 800px;
-        /* maintains neat sizing on mobile */
     }
 
     header nav ul {
         flex-direction: column;
-        /* vertical menu for easy taps */
         align-items: center;
         gap: 10px;
     }
 
     body {
         padding-top: 200px;
-        /* adjusts for header spacing */
     }
 }
 
@@ -406,18 +395,20 @@ footer {
     max-width: 1200px;
     margin: 80px auto;
 }
+.maps h2 {
+    font-size: 3em;
+    text-align: center;
+}
 
 #contact {
     font-style: italic;
-    padding-top: 15%;
-    font-size: large;
+    font-size: 1.5em;
     text-align: center;
 }
 
 
 .contact-section {
     position: relative;
-    /* critical for ::before to work */
     width: 100%;
     padding: 80px 0;
     overflow: hidden;
@@ -595,7 +586,6 @@ footer {
 
 .booking-section {
     position: relative;
-    /* critical for ::before to work */
     width: 100%;
     padding: 80px 0;
     overflow: hidden;
