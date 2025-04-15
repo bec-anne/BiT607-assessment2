@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 
-/* HEADER STYLES */
+/* header styles */
 header {
     position: fixed;
     top: 0;
@@ -17,7 +17,7 @@ header {
     font-family: 'DynaPuff', serif;
 }
 
-/* HEADER  */
+/* Header  */
 .nav-wrap {
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ header {
     padding: 0 40px;
 }
 
-/* TITLE */
+/* Title */
 .nav-wrap a {
     text-decoration: none;
     color: inherit;
@@ -57,7 +57,7 @@ nav.navbar ul {
     padding: 0;
 }
 
-/* NAV LINKS */
+/* NAV links */
 nav.navbar ul li a,
 nav.navbar ul li a:visited,
 nav.navbar ul li a:active {
@@ -72,7 +72,7 @@ nav.navbar ul li a:active {
     transition: all 0.2s ease;
 }
 
-/* HOVER EFFECT */
+/* Hover effect */
 nav.navbar ul li a:hover {
     transform: translateY(-3px);
     background-color: peachpuff;
@@ -395,6 +395,7 @@ footer {
     max-width: 1200px;
     margin: 80px auto;
 }
+
 .maps h2 {
     font-size: 3em;
     text-align: center;
